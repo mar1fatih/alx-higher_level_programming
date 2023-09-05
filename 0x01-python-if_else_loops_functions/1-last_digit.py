@@ -7,7 +7,7 @@ if number < 0:
     modi = number % -10
 if number == 0:
     modi = number
-print(f"last digit of {number:d} is {modi:d} and is", end=" ")
+print(f"Last digit of {number:d} is {modi:d} and is", end=" ")
 if modi > 5:
     print("greater than 5")
 elif modi == 0:

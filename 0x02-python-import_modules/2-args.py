@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    from sys import argv
+    import sys
 
     c = 0
 
-    for i in argv:
+    for i in sys.argv:
         c += 1
     c -= 1
     if c == 0:
@@ -15,4 +15,4 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(c))
     for i in range(c):
-        print("{}: {}".format(i + 1, argv[i + 1]))
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))

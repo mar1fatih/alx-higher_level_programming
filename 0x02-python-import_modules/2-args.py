@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
+import sys
+
 if __name__ == "__main__":
-    import sys
 
     c = len(sys.argv)
     c -= 1

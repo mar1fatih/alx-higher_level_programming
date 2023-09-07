@@ -3,10 +3,11 @@
 if __name__ == "__main__":
     from sys import argv
 
-    c == 0
+    c = 0
 
     for i in argv:
         c += 1
+    c -= 1
     if c == 0:
         print("0 arguments.")
     elif c == 1:

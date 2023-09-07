@@ -7,7 +7,6 @@ if __name__ == "__main__":
 
     for i in argv:
         c += 1
-    c -= 1
     if c == 0:
         print("0 arguments.")
     elif c == 1:

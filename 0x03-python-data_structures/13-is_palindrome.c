@@ -23,8 +23,8 @@ int is_palindrome(listint_t **head)
 	ptr = malloc(sizeof(int) * s);
 	if (!ptr)
 	{
-		printf("failed to allocate");
-		return(0);
+		perror("failed to allocate");
+		return(1);
 	}
 	current = *head;
 	while (current)

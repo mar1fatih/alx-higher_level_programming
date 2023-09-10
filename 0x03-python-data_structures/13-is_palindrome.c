@@ -14,7 +14,7 @@ int is_palindrome(listint_t **head)
 	{
 		return (1);
 	}
-	while(current)
+	while (current)
 	{
 		current = current->next;
 		s++;
@@ -34,7 +34,7 @@ int is_palindrome(listint_t **head)
 	}
 	current = *head;
 	s--;
-	while(current)
+	while (current)
 	{
 		if (current->n != ptr[s])
 		{

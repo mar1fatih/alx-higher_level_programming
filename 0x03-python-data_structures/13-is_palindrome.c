@@ -24,7 +24,7 @@ int is_palindrome(listint_t **head)
 	if (!ptr)
 	{
 		perror("failed to allocate");
-		return (1);
+		exit(1);
 	}
 	current = *head;
 	while (current)

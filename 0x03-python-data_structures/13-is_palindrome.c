@@ -38,6 +38,7 @@ int is_palindrome(listint_t **head)
 	{
 		if (current->n != ptr[s])
 		{
+			free(ptr);
 			return (0);
 		}
 		current = current->next;

@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-(lambda x: x)(print("#pythoniscool"))
+from os import write
+write(1, b"#pythoniscool\n")

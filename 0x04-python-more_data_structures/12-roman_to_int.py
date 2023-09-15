@@ -18,12 +18,11 @@ def roman_to_int(roman_string):
                     s += 1
                     i += 1
             else:
-                s += 5
+                s += 1
                 i += 1
-
-         elif roman_string[i] == "V":
-             s += 5
-             i += 1
+        elif roman_string[i] == "V":
+            s += 5
+            i += 1
         elif roman_string[i] == "X":
             v = i + 1
             if v < len(roman_string):

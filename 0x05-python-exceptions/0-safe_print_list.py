@@ -2,10 +2,10 @@
 def safe_print_list(my_list=[], x=0):
     a = 0
     try:
-        while a < x :
-            print(my_list[a], end=" ")
+        while a < x:
+            print(my_list[a], end="")
             a = a + 1
     except IndexError:
         None
-    print(" ")
+    print("")
     return a

@@ -5,10 +5,10 @@ Rectangle class
 
 
 class Rectangle:
+    """rectangle"""
 
     number_of_instances = 0
 
-    """rectangle"""
     def __init__(self, width=0, height=0):
         """__init__ of the Rectangle"""
         self.width = width

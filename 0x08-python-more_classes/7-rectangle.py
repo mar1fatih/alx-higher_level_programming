@@ -66,7 +66,7 @@ class Rectangle:
             return string
         rows = []
         for i in range(self.__height):
-            row = str(Rectangle.print_symbol) * self.__width
+            row = str(self.print_symbol) * self.__width
             rows.append(row)
         string = "\n".join(rows)
         return string

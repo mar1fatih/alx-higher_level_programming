@@ -1,0 +1,18 @@
+>>> MyList = __import__("1-my_list").MyList
+
+
+>>> list_t = MyList()
+>>> print(type(list_t))
+<class 'type'>
+
+>>> list_t = MyList()
+>>> type(list_t) == MyList
+True
+
+>>> list_t = MyList([9, 1, 7, 5])
+>>> list_t.print_sorted()
+[1, 5, 7, 9]
+
+>>> list_t = MyList([9, -1, 2, -10])
+>>> list_t.print_sorted()
+[-10, -1, 2, 9]

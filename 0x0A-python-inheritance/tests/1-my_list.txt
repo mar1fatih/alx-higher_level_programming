@@ -1,18 +1,47 @@
 >>> MyList = __import__('1-my_list').MyList
 
-
->>> list_t = MyList()
->>> print(type(list_t))
-<class 'type'>
-
->>> list_t = MyList()
->>> type(list_t) == MyList
+>>> mlist = MyList()
+>>> type(mlist) == MyList
 True
 
->>> list_t = MyList([9, 1, 7, 5])
->>> list_t.print_sorted()
-[1, 5, 7, 9]
+>>> mlist = MyList()
+>>> isinstance(mlist, list)
+True
 
->>> list_t = MyList([9, -1, 2, -10])
->>> list_t.print_sorted()
-[-10, -1, 2, 9]
+>>> type(MyList.__dict__['print_sorted'])
+<class 'function'>
+
+>>> mlist.print_sorted([4, 2, 5])
+Traceback (most recent call last):
+...
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+>>> mlist.print_sorted([4, 2], 1)
+Traceback (most recent call last):
+...
+TypeError: print_sorted() takes 1 positional argument but 3 were given
+
+>>> mlist = MyList()
+>>> mlist.print_sorted()
+[]
+
+
+>>> mlist = MyList([1, 2, 3, 5])
+>>> mlist.print_sorted()
+[1, 2, 3,5]
+
+
+>>> mlist = MyList([2, 10, 1, -10, 20, 0])
+>>> mlist.print_sorted()
+[-10, 0, 1, 2, 10, 20]
+>>> mlist
+[2, 10, 1, -10, 20, 0]
+
+>>> mlist = MyList([10, 20, 100])
+>>> mlist.print_sorted()
+[10, 20, 100]
+
+>>> mlist = MyList()
+>>> mlist.append(1)
+>>> mlist
+[1]

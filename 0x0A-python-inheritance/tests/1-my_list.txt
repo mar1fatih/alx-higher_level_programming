@@ -1,4 +1,4 @@
->>> MyList = __import__('1-my_list').MyList
+>>> mlist = __import__('1-my_list').mlist
 
 >>> mlist = MyList()
 >>> type(mlist) == MyList

@@ -64,6 +64,12 @@ class Test_Base(unittest.TestCase):
         b = Base("hello")
         self.assertEqual(b.id, "hello")
 
+    def test_arg5(self):
+        """testing keyword arg"""
+        a = 5
+        b = Base(id = a)
+        self.assertEqual(b.id, a)
+
 
 if __name__ == "__main__":
     unittest.main()

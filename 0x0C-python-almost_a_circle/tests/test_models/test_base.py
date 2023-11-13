@@ -59,6 +59,10 @@ class Test_Base(unittest.TestCase):
         b = Base()
         self.assertEqual(getattr(Base, "_Base__nb_objects"), b.id)
 
+    def test_arg4(self):
+        """testing string"""
+        b = Base("hello")
+        self.assertEqual(b.id, "hello")
 
 if __name__ == "__main__":
     unittest.main()

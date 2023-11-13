@@ -21,3 +21,12 @@ class Base:
             return "[]"
         import json
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save the object attribute to a file"""
+        with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as f:
+            _list = []
+            for ls in list_objs:
+                _list.append(ls.to_dictionary())
+            f.write(cls.to_json_string(_list))

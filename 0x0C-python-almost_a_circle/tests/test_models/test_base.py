@@ -67,8 +67,13 @@ class Test_Base(unittest.TestCase):
     def test_arg5(self):
         """testing keyword arg"""
         a = 5
-        b = Base(id = a)
+        b = Base(id=a)
         self.assertEqual(b.id, a)
+
+    def test_json(self):
+        """test no args in json function"""
+        with self.assertRaises(TypeError):
+            Base.to_json_string()
 
 
 if __name__ == "__main__":

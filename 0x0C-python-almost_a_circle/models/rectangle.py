@@ -82,3 +82,8 @@ class Rectangle(Base):
         print("".join("\n" for y in range(self.__y)) +
               "\n".join("".join(" " * self.__x +
                         "#" * self.__width) for j in range(self.__height)))
+
+    def __str__(self):
+        """string representing class"""
+        return "[Rectangle] ({}) {}/{} - {}/{}"
+        .format(self.id, self.__x, self.__y, self.__width, self.__height)

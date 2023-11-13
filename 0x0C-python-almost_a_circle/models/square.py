@@ -25,3 +25,34 @@ class Square(Rectangle):
         self.validation("width", value)
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """update square attribute"""
+        if args:
+            self.upargs(args)
+        else:
+            self.upkwargs(kwargs)
+
+    def upargs(self, args):
+        """called when *args giving"""
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[0]
+            if i == 1:
+                self.size = args[1]
+            if i == 2:
+                self.x = args[2]
+            if i == 3:
+                self.y = args[3]
+
+    def upkwargs(self, kwargs):
+        """called when **kwargs giving"""
+        for key, value in kwargs.items():
+            if key == "id":
+                self.id = value
+            if key == "size":
+                self.size = value
+            if key == "x":
+                self.x = value
+            if key == "y":
+                self.y = value

@@ -30,3 +30,9 @@ class Base:
             for ls in list_objs:
                 _list.append(ls.to_dictionary())
             f.write(cls.to_json_string(_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """extract the list from json str"""
+        import json
+        return json.loads(json_string)

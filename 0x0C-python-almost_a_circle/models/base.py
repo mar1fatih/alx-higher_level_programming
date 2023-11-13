@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""base"""
+"""base file check the code"""
 
 
 class Base:

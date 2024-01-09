@@ -1,0 +1,1 @@
+object ,scoopes and closures

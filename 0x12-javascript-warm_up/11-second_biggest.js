@@ -5,10 +5,10 @@ if (process.argv.length <= 3) {
   const array = process.argv.slice(2).map(Number);
   let secondLargest = array.sort((a, b) => b - a);
   for (let i = 1; i < array.length; i++) {
-       if (array[i] !== array[0]) {
-         secondLargest = array[i];
-         break;
-     }
-   }
+    if (array[i] !== array[0]) {
+      secondLargest = array[i];
+      break;
+    }
+  }
   console.log(secondLargest);
 }

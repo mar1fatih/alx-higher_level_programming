@@ -9,7 +9,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("""SELECT * FROM states
-                WHERE UPPER(SUBSTRING(* FROM 1 FOR 1)) = 'N';""")
+                WHERE name LIKE BINARY 'N%' ORDER BY states.id""")
     rows = cur.fetchall()
     for row in rows:
         print(row)

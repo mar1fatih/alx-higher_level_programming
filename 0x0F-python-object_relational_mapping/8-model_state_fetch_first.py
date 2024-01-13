@@ -16,4 +16,4 @@ if __name__ == "__main__":
     if not ins:
         print("Nothing")
     else:
-        print(instance.id, instance.name, sep=": ")
+        print(ins.id, ins.name, sep=": ")

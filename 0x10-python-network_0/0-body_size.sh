@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # script count the url request body lines
-url=$1
-curl -s $url | wc -c
+curl -s $1 | wc -c

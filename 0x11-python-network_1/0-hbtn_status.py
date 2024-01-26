@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# python script to request from url
+"""python script to request from url"""
 from urllib.request import Request, urlopen
 
 
